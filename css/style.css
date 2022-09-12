@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Jomhuria&family=Open+Sans:ital,wght@1,300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,200;0,500;1,100&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+header {
+  background-color: #e09aa0;
+  width: 100%;
+  position: fixed;
+  z-index: 999999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 200px;
+}
+.navbar a,
+.logo {
+  text-decoration: none;
+  color: #f9f1f0;
+}
+.logo {
+  font-size: 1.8em; /* relative font size */
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.navbar a {
+  font-size: 1.1em;
+  padding: 20px;
+}
+.navbar a:hover {
+  color: #9a2f43;
+}
+/* //// section /// */
+section {
+  padding: 100px 200px;
+}
+.main {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/pexels.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.main div h2 {
+  color: #e09aa0;
+  font-size: 2.5em;
+}
+.main div h3,
+.main div h4 {
+  color: #f9f1f0;
+  margin: 0.7em;
+}
+.main div h3 {
+  letter-spacing: 1px;
+  margin-bottom: 0.8em;
+}
+.main .main-button {
+  padding: 0.7em 2em;
+  border-radius: 1.25em;
+  background-color: #e09aa0;
+  color: #f9f1f0;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.main .main-button:hover {
+  background-color: #dd8087;
+  padding: 0.795em 2.1em;
+}
+.social-icons {
+  margin-top: 0.8em;
+  font-size: 1.7em;
+}
+.social-icons i {
+  color: #f9f1f0;
+  padding: 5px;
+}
+/* ///////////// cards section ////////////*/
+.content,
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  text-align: center;
+  font-size: 3em;
+  color: #9a2f43;
+  padding-bottom: 1.2em;
+}
+.content {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.card {
+  text-align: center;
+  padding: 10px;
+  width: 15.5em;
+  height: 18em;
+  background-color: white;
+  box-shadow: 0 5px 25px #dd8087;
+  color: #9a2f43;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  transition: 0.7s ease;
+  flex-direction: column;
+}
+.card:hover,
+.projects-card:hover {
+  transform: scale(1.1);
+}
+.card .icon i {
+  font-size: 5em;
+  margin-bottom: 30px;
+}
+.card .info {
+  margin-bottom: 40px;
+}
+/* ///////////// projects //////// */
+.projects {
+  flex-wrap: wrap;
+  /* background-color: rgba(63, 125, 182, 0.61); */
+  background-color: #f1ebeb;
+}
+.projects .content {
+  width: 100%;
+}
+.projects-card {
+  width: 18em;
+  min-height: 14em;
+  text-align: center;
+  background-color: #f9f1f0;
+  border: 2px solid #f9f1f0;
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+.projects-image img {
+  width: 17.8em;
+  height: 9em;
+  border-radius: 10px;
+}
+.projects-card:hover img {
+  opacity: 0.9;
+}
+.projects-card strong span {
+  padding-right: 35px;
+  text-transform: uppercase;
+}
+.projects-card strong a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #dd8087;
+}
+.projects-card strong a:hover {
+  color: #9a2f43;
+}
+/* /////////// contact ////////////// */
+.contact .card {
+  width: 15.5em;
+  height: 15em;
+}
+.contact .card .icon i {
+  font-size: 4em;
+}
+.contact .card .info {
+  color: black;
+}
+/* /////////// footer ////////// */
+footer {
+  background-color: #e09aa0;
+  padding: 0em 5em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer p {
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #f9f1f0;
+}
+footer p span {
+  color: #9a2f43;
+}
+/* /////////////// media //////// */
+@media (max-width: 1023px) {
+  header {
+    padding: 10px 15px;
+  }
+  .navbar a {
+    padding-left: 8px;
+    padding-right: 0px;
+  }
+  .main {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title {
+    font-size: 1.8em;
+  }
+
+  section {
+    padding: 80px 20px;
+  }
+
+  .main-content h2 {
+    font-size: 1em;
+  }
+
+  .main-content h3 {
+    font-size: 1.6em;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer {
+    padding: 5px;
+    flex-direction: column;
+  }
+}
